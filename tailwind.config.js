@@ -11,6 +11,7 @@ export default {
       },
       fontFamily: {
         aboreto: ['Aboreto', 'system-ui'],
+        montserrat: ['Montserrat', 'sans-serif'],
         merriweather: ['Merriweather', 'serif'],
         poppins: ['Poppins', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
