@@ -22,12 +22,12 @@ const products = [
 export const Products = () => {
   return (
     <section className='py-16 bg-white relative overflow-hidden'>
-      <div className='absolute top-0 left-0 w-full h-full text-center text-8xl font-playfair-sc text-[#E7E4E4] select-none z-0 tracking-widest pointer-events-none'>
+      <div className='absolute top-0 left-0 w-full h-full text-center text-7xl font-playfair-sc text-[#E7E4E4] select-none z-0 tracking-widest pointer-events-none'>
           PRODUCTS OF THE SEASON
       </div>
 
-      <div className='container mx-auto px-8 relative z-10'>
-        <h2 className='text-center text-3xl font-playfair text-[#8B4302] mb-12'>
+      <div className='container mx-auto px-6 relative z-10'>
+        <h2 className='text-center text-3xl font-playfair text-[#8B4302] mb-10'>
            Step into Style
         </h2>
       
