@@ -1,5 +1,6 @@
 import React from 'react'
 import {ShoppingCart} from 'lucide-react'
+import HeroImage from '../assets/HeroImage.png'
 
 const Hero = () => {
   return (
@@ -8,20 +9,21 @@ const Hero = () => {
       <div className='relative z-10 container mx-auto px-8 flex flex-col md:flex-row items-center justify-between'> 
        
         {/* Left Container*/}
-        {/*Background text */}
-      <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[15rem] font-montserrat font-bold text-[#8B4302] opacity-11 select-none z-0'>
-       PRA <br/>
-       DA
-      </div>
-        <div className='md:w-1/2 flex justify-center mt-10 md:mt-0 relative'>
-          <div className='w-[400px] h-[400px] relative '>
-             <img src="" alt="" />
+        <div className='md:w-[60%] flex justify-center mt-10 md:mt-0 relative'>
+          <div className='w-[990px] h-[990px]  relative z-20 mt-[450px]'>
+            <img src={HeroImage} alt="Pointed Stiletto Heel Low-Cut High Heels"/>
           </div>
         </div>
+        {/*Background text */}
+       <div className='absolute top-1/2 left-1/8 transform -translate-x-1/2 -translate-y-1/2 text-[200px] font-montserrat font-bold text-[#8B4302] opacity-11 select-none z-10 leading-[0.8]'>
+       PRA <br/>
+       DA
+       </div>
+          
 
         {/* Right Container*/} 
-         <div className='md:w-1/2 space-y-6'>
-         <h1 className='text-3xl md:text-5xl font-playfair font-bold text-[#000000] leading-tight'>
+         <div className='md:w-1/2 space-y-8 px-[50px]'>
+         <h1 className='text-32xl md:text-5xl font-playfair font-bold text-[#000000] leading-normal'>
           Pointed Stiletto <br/>
           Heel Low-Cut <br/>
           High Heels
