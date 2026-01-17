@@ -5,11 +5,11 @@ import avatar from '../assets/avatar.jpg'
 const Navbar = () => {
   return (
     <nav className='flex items-center justify-between py-2 bg-white shadow-sm relative z-8'>
-       <div className='text-[27px] font-aboreto font-regular text-[#8B4302] tracking-wider'>
+       <div className='text-[25px] font-aboreto font-regular text-[#8B4302] tracking-wider'>
         VELVET STEPS
     </div>
 
-    <div className='hidden md:flex space-x-4 text-sm font-montserrat-semibold text-[#8B4302]'>
+    <div className='hidden md:flex space-x-8 text-sm font-montserrat-semibold text-[#8B4302]'>
         <a href="#" className='hover:text-[#8A7059] transition-colors'>Home</a>
         <a href="#" className='hover:text-[#8A7059] transition-colors'>Collections</a>
         <a href="#" className='hover:text-[#8A7059] transition-colors'>About</a>
