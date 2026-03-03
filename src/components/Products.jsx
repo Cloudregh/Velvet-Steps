@@ -22,7 +22,7 @@ const products = [
 export const Products = () => {
   return (
     <section className='py-16 bg-white relative overflow-hidden'>
-      <div className='absolute top-0 left-0 w-full h-full text-center text-7xl font-playfair-sc text-[#E7E4E4] select-none z-0 tracking-widest pointer-events-none'>
+      <div className='absolute top-0 left-0 w-full h-full text-center text-7xl font-playfair-sc text-[#E7E4E4] select-none tracking-widest pointer-events-none'>
           PRODUCTS OF THE SEASON
       </div>
 
@@ -35,20 +35,18 @@ export const Products = () => {
        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {products.map((product)=>(
           <div key={product.id} className='group cursor-pointer'>
-            <div className='bg-[#FFFBF9] h-80 w-full mb-4 flex items-center justify-center overflow-hidden'>
+            <div className='bg-[#FFFBF9] h-40 w-40 mb-4 flex items-center justify-center overflow-hidden'>
               <img src={product.image} alt={product.name}
-              className='w-full h-full object-cover transition-transform duration-300 group-hover:scale-105' />
+              className='w-full h-full object-fit transition-transform duration-300 group-hover:scale-105' />
             </div>
-             <div className='flex justify-between items-start'>
-              <div>
-                <h3 className='text-lg font-merriweather font-regular text-[#8B4302]'>{product.name}</h3>
-                <div className='flex text-[#8B4302] mt-1'>
-                  {[...Array(5)].map((_, index) => (
-                    <Star key={index} className={`w-4 h-4 ${index < product.rating ? `fill-current`: 'text-[#8B4302]'}`}/>
-                  ))}
-                </div>
+            <div className='flex flex-col items-center gap-1'>
+              <h3 className='text-3 font-merriweather font-regular text-[#8B4302]'>{product.name}</h3>
+              <div className='flex text-[#8B4302]'>
+                {[...Array(5)].map((_, index) => (
+                  <Star key={index} className={`w-4 h-4 ${index < product.rating ? `fill`: 'text-[#8B4302]'}`}/>
+                ))}
               </div>
-              <span className='text-lg font-bold text-[#8B4302]'> Ghc {product.price}</span>
+              <span className='text-3 font-bold text-[#8B4302]'> Ghc {product.price}</span>
             </div>
           </div>
         ))}

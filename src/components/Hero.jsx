@@ -10,7 +10,7 @@ const Hero = () => {
        
         {/* Left Container*/}
         <div className='md:w-[60%] flex justify-center mt-10 md:mt-0 relative'>
-          <div className='w-[990px] h-[990px]  relative z-20 mt-[450px]'>
+          <div className='w-[800px] h-[800px]  relative z-20 mt-[450px]'>
             <img src={HeroImage} alt="Pointed Stiletto Heel Low-Cut High Heels"/>
           </div>
         </div>
@@ -22,8 +22,8 @@ const Hero = () => {
           
 
         {/* Right Container*/} 
-         <div className='md:w-1/2 space-y-8 px-[50px]'>
-         <h1 className='text-32xl md:text-5xl font-playfair font-bold text-[#000000] leading-normal'>
+         <div className='md:w-1/2 space-y-8 px-[25px]'>
+         <h1 className='text-2xl md:text-5xl font-playfair font-bold text-[#000000] leading-normal'>
           Pointed Stiletto <br/>
           Heel Low-Cut <br/>
           High Heels
