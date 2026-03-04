@@ -31,28 +31,29 @@ export const Products = () => {
         </h2>
       </div>
 
-      <div className='container mx-auto px-20 relative z-10'>
-      
-
-       <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-15'>
-        {products.map((product)=>(
-          <div key={product.id} className='group cursor-pointer'>
-            <div className='bg-[#FFFBF9] h-70 w-70 mb-4 flex items-center justify-center overflow-hidden'>
-              <img src={product.image} alt={product.name}
-              className='h-50 w-50 object-fit transition-transform duration-300 group-hover:scale-105' />
-            </div>
-            <div className='flex flex-col items-center gap-3'>
-              <h3 className='text-3 font-merriweather font-regular text-[#8B4302]'>{product.name}</h3>
-              <div className='flex text-[#8B4302]'>
-                {[...Array(5)].map((_, index) => (
-                  <Star key={index} className={`w-4 h-4 ${index < product.rating ? `fill-current`: 'text-[#8B4302]'}`}/>
-                ))}
+      <div className='container mx-auto px-4 md:px-12 lg:px-20 relative z-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>
+          {products.map((product) => (
+            <div key={product.id} className='group cursor-pointer flex flex-col items-center'>
+              <div className='bg-[#FFFBF9] aspect-square w-full mb-4 flex items-center justify-center overflow-hidden rounded-xl'>
+                <img 
+                  src={product.image} 
+                  alt={product.name}
+                  className='w-4/5 h-4/5 object-contain transition-transform duration-300 group-hover:scale-110' 
+                />
               </div>
-              <span className='text-3 font-medium font-merriweather text-[#8B4302]'> Ghc {product.price}</span>
+              <div className='flex flex-col items-center gap-2 text-center'>
+                <h3 className='text-sm md:text-base font-merriweather font-regular text-[#8B4302]'>{product.name}</h3>
+                <div className='flex text-[#8B4302]'>
+                  {[...Array(5)].map((_, index) => (
+                    <Star key={index} className={`w-4 h-4 ${index < product.rating ? 'fill-current' : 'text-[#8B4302]'}`} />
+                  ))}
+                </div>
+                <span className='text-sm font-medium font-merriweather text-[#8B4302]'>Ghc {product.price}</span>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
     </section>
   );
