@@ -39,7 +39,7 @@ export const Products = () => {
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className='w-4/5 h-4/5 object-contain transition-transform duration-300 group-hover:scale-110' 
+                  className='w-3/5 h-3/5 object-contain transition-transform duration-300 group-hover:scale-110' 
                 />
               </div>
               <div className='flex flex-col items-center gap-2 text-center'>
