@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Products from './components/Products'
 import FavSection from './components/FavSection'
+import Payment from './components/Payment'
 
 function  App (){
   return (
@@ -11,6 +12,7 @@ function  App (){
       <Hero/>
       <Products/>
       <FavSection/>
+      <Payment/>
     </div>
   )
 }
