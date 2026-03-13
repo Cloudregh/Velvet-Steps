@@ -14,38 +14,39 @@ const FavSection = () => {
            shop the lineup
         </h2>
        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-[600px]">
-            {/*Large Left Item*/}
-            <div className="relative h-full group overflow-hidden bg-gray-100 rounded-[45px]">
+      <div className='max-w-7xl mx-auto px-4 mb-16'>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+            {/* Top Left: Heels */}
+            <div className="relative h-[400px] md:h-[500px] md:col-span-7 group overflow-hidden rounded-[45px]">
                 <img src={Ankle_Strap_Chunky_Heels} alt="Ankle Strap Chunky Heels"
-                className="w-full h-full object-center transition-transform duration-500 group-hover:scale-105"/>
-                <div className="absolute bottom-6 left-6">
-                    <h3 className="font-playfair-sc font-regular text-[#000000] px-4 py-2 inline-block text-[40px]">Ankle Strap <br/>Chunky Heels</h3>
-                </div>
-            </div>
-            {/*Right Column */}
-            <div className="grid grid-rows-2 gap-6 h-full">
-
-            {/* Top Right */}
-            <div className="relative h-full group overflow-hidden rounded-[45px]">
-                <img src={Boots} alt="Punk Stlye Boots" 
-                className="w-full h-full object-center transition-transform duration-500 group-hover:scale-105"/>
-                <div className="absolute bottom-6 left-6">
-                    <h3 className="font-playfair-sc font-regular text-[#8B4302] px-4 py-2 inline-block text-[40px]">Punk Style Boots <br/>Faux Suede Lace-up <br/>Front Boots</h3>
+                className="w-[699px] h-[506px] object-center transition-transform duration-500 group-hover:scale-105"/>
+                <div className="absolute bottom-10 left-10 max-w-[80%]">
+                    <h3 className="font-playfair text-[#000000] text-[32px] md:text-[45px] leading-tight">Ankle Strap <br/>Chunky Heels</h3>
                 </div>
             </div>
 
-            {/* Bottom Right */}
-
-            <div className="relative h-full group overflow-hidden rounded-[45px]">
-                <img src={Cross} alt="Cross"
-                className="w-full h-full object-center transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute bottom-6 left-6">
-                    <h3 className="font-playfair-sc font-regular text-white px-4 py-2 inline-block text-[40px]">Cross</h3>
+            {/* Top Right: Boots */}
+            <div className="relative h-[400px] md:h-[500px] md:col-span-5 group overflow-hidden rounded-[45px]">
+                <img src={Boots} alt="Punk Style Boots" 
+                className="w-full h-full object-cover object-[center_75%] transition-transform duration-500 group-hover:scale-105"/>
+                <div className="absolute top-10 left-6 max-w-[80%]">
+                    <h3 className="font-playfair text-[#8B4302] text-[16px] md:text-[32px] leading-tight flex flex-col gap-1">
+                        <span>Punk Style Boots</span>
+                        <span className="text-[20px] md:text-[20px]">Faux Suede Lace-up <br/>Front Boots</span>
+                    </h3>
                 </div>
             </div>
+
+            {/* Bottom: Cross (Full Width) */}
+            <div className="relative h-[400px] md:h-[500px] md:col-span-12 group overflow-hidden rounded-[45px]">
+                <img src={Cross} alt="Women Criss Cross Tie Leg Flat Sandals"
+                className="w-[1344px] h-[496px] object-center transition-transform duration-500 group-hover:scale-105" />
+                <div className="absolute top-10 left-10 max-w-[50%] text-right">
+                    <h3 className="font-playfair text-[#8B4302] text-[28px] md:text-[40px] leading-tight">Women Criss Cross Tie <br/>Leg Flat Sandals,</h3>
+                </div>
             </div>
         </div>
+      </div>
     </section>
   )
 }
