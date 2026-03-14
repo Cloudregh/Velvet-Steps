@@ -19,7 +19,7 @@ const FavSection = () => {
             {/* Top Left: Heels */}
             <div className="relative h-[400px] md:h-[500px] md:col-span-7 group overflow-hidden rounded-[45px]">
                 <img src={Ankle_Strap_Chunky_Heels} alt="Ankle Strap Chunky Heels"
-                className="w-[699px] h-[506px] object-center transition-transform duration-500 group-hover:scale-105"/>
+                className="w-[720px] h-[506px] object-center transition-transform duration-500 group-hover:scale-105"/>
                 <div className="absolute bottom-10 left-10 max-w-[80%]">
                     <h3 className="font-playfair text-[#000000] text-[32px] md:text-[45px] leading-tight">Ankle Strap <br/>Chunky Heels</h3>
                 </div>
