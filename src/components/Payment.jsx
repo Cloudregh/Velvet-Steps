@@ -23,7 +23,14 @@ const Payment = () => {
         </h2>
        </div>
        <div className="flex flex-col lg:flex-row bg-[#FFFBF9] overflow-hidden">
-        <div></div>
+        <div className="lg:w-1/2 p-8 bg-white flex flex-col items-center">
+          <div className="w-full flex justify-between items-center mb-8">
+            <div>
+              <span className="block text-[#8B4302] text-sm">Total Payment</span>
+              <span className="text-[#8B4302]font-merriweather text-sm">300ghc</span>
+            </div>
+        </div>
+        </div>
        </div>
     </section>
   )
