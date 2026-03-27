@@ -7,13 +7,33 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between mb-12">
                 <div className="mb-8 md:mb-0">
                     <h4 className="font-medium text-poppins text-[#8B4302] mb-4 text-sm tracking-wider">Home</h4>
-                    <ul>
-                        <li><a href="#" className="hover:text-[#8B4302]">About</a></li>
-                        <li><a href="#" className="hover:text-[#8B4302]">Collections</a></li>
-                        <li><a href="#" className="hover:text-[#8B4302]">Contact</a></li>
+                    <ul className="space-y-2 text-sm text-[#8B4302]">
+                        <li><a href="#" className="hover:text-black">About</a></li>
+                        <li><a href="#" className="hover:text-black">Collections</a></li>
+                        <li><a href="#" className="hover:text-black">Contact</a></li>
                     </ul>
                 </div>
-                <div></div>
+                <div className="mb-8 md:mb-0">
+                    <h4 className="font-medium text-[#8B4302] mb-4 tracking-wider">Help</h4>
+                    <ul className="space-y-2 text-sm text-[#8B4302]">
+                        <li><a href="#" className="hover:text-black">Shipping & Returns</a></li>
+                        <li><a href="#" className="hover:text-black">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div className="mb-8 md:mb-0">
+                    <h4 className="font-medium text-[#8B4302] mb-4 tracking-wider">Contact</h4>
+                        <ul className='space-y-2 text-sm text-[#8B4302]'>
+                            <li> 123 Fashion Street </li>
+                            <li>Accra, Ghana</li>
+                            <li>+233 20 000 0000</li>
+                            <li>info@velvetsteps.com</li>
+                        </ul>
+                </div>
+                <div className="mb-8 md:mb-0">
+                    <h4 className="font-medium text-[#8B4302] mb-4 tracking-wider">Shop Hours</h4>
+                    <ul className="space-y-2 text-sm text-[]"></ul>
+                </div>
             </div>
         </div>
     </footer>
