@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Products from './components/Products'
 import FavSection from './components/FavSection'
 import Payment from './components/Payment'
+import Footer from './components/Footer'
 
 function  App (){
   return (
@@ -13,6 +14,7 @@ function  App (){
       <Products/>
       <FavSection/>
       <Payment/>
+      <Footer/>
     </div>
   )
 }
