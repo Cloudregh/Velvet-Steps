@@ -105,24 +105,24 @@ const Payment = () => {
           <div className="flex flex-col gap-10 w-full">
             {/* Name */}
             <div className="flex flex-col">
-              <label className="text-sm md:text-base text-gray-400 text-poppins font-light mb-3">Name</label>
+              <label className="text-sm md:text-base text-gray-400 font-poppins font-light mb-3">Name</label>
               <input type="text" defaultValue="Short Cake" className="w-full text-lg md:text-xl outline-none border-b-2 border-[#FCD1A6] pb-3 text-black bg-transparent font-medium" />
             </div>
 
             {/* Card Number */}
             <div className="flex flex-col">
-              <label className="text-sm md:text-base text-gray-400 text-poppins font-light mb-3">Card Number</label>
+              <label className="text-sm md:text-base text-gray-400 font-poppins font-light mb-3">Card Number</label>
               <input type="text" defaultValue="1234 5678 9101 1623" className="w-full text-lg md:text-xl outline-none border-b-2 border-[#FCD1A6] pb-3 text-black bg-transparent tracking-widest font-medium" />
             </div>
 
             {/* Exp and CVC */}
             <div className="flex flex-col md:flex-row gap-10 w-full mt-2">
                <div className="flex flex-col flex-1">
-                 <label className="text-sm md:text-base text-gray-400 text-poppins font-light mb-3">Expiration Date</label>
+                 <label className="text-sm md:text-base text-gray-400 font-poppins font-light mb-3">Expiration Date</label>
                  <input type="text" defaultValue="03/25" className="w-full text-lg md:text-xl outline-none border-b-2 border-[#FCD1A6] pb-3 text-black bg-transparent tracking-wider font-medium" />
                </div>
                <div className="flex flex-col flex-1">
-                 <label className="text-sm md:text-base text-gray-400 text-poppins font-light mb-3 text-lowercase">cvc/cvv</label>
+                 <label className="text-sm md:text-base text-gray-400 font-poppins font-light mb-3 text-lowercase">cvc/cvv</label>
                  <input type="password" defaultValue="123" className="w-full text-2xl md:text-3xl outline-none border-b-2 border-[#FCD1A6] pb-2 pt-1 text-black bg-transparent tracking-[0.2em] font-medium" />
                </div>
             </div>
@@ -136,7 +136,7 @@ const Payment = () => {
 
             {/* Button */}
             <div className="flex justify-center mt-6">
-               <button className="px-16 md:px-24 py-5 bg-[#FCD1A6] text-black text-poppins font-regular rounded-xl text-xl md:text-2xl hover:bg-opacity-80 transition shadow-sm font-sans transform hover:-translate-y-1">
+               <button className="px-16 md:px-24 py-5 bg-[#FCD1A6] text-black font-poppins font-regular rounded-xl text-xl md:text-2xl hover:bg-opacity-80 transition shadow-sm transform hover:-translate-y-1">
                  Buy Now
                </button>
             </div>
