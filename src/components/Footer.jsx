@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react'
 import React from 'react'
 
 const Footer = () => {
@@ -32,10 +33,30 @@ const Footer = () => {
                 </div>
                 <div className="mb-8 md:mb-0">
                     <h4 className="font-medium text-[#8B4302] mb-4 tracking-wider">Shop Hours</h4>
-                    <ul className="space-y-2 text-sm text-[]"></ul>
+                    <ul className="space-y-2 text-sm text-[#8B4302]">
+                        <li>Mon - Fri 9:00 - 20:00</li>
+                        <li>Sat 10:00 - 18:00</li>
+                        <li>Sun Closed</li>
+                    </ul>
+                </div>
+                <div className="w-full md:w-1/3 bg-[#8B4302] p-6 rounded-lg text-white">
+                <h4 className="font-regular text-poppins text-[14px] mb-2"> Subscribe to our newsletter</h4>
+                <div className="flex">
+                    <input 
+                    type="email"
+                    placeholder="Enter your email address"
+                    className="bg-white w-full px-4 py-2 text-[#A9ACB5] rounded-lg focus:outline-none"
+                    />
+                    <button className="bg-[#6E4101] text-white px-4 py-2 font-regular rounded-r">
+                        <ArrowRight/>
+                    </button>
+                </div>
+                <p className="text-sm text-white mt-3"> Get the latest updates on our new products and upcoming sales</p>
                 </div>
             </div>
         </div>
+
+        <div></div>
     </footer>
   )
 }
